@@ -18,7 +18,7 @@ document.querySelector('.heart').addEventListener('click', function() {
   });
 
   var savedCountdown = localStorage.getItem('countDownDate');
-  var countDownMinutes = 48; // Define el tiempo en horas para la cuenta regresiva
+  var countDownMinutes = 0.01; // Define el tiempo en horas para la cuenta regresiva
   var countDownDate;
   
   if (!savedCountdown) {
