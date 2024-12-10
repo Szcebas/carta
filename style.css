@@ -8,7 +8,27 @@ body {
     transition: background-color 0.5s ease;
     background-size: 120%;
     animation: fanimado 45s infinite; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita el scroll */
 }
+
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
 
 @keyframes animat {
     0% {
