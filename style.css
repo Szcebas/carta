@@ -1,47 +1,44 @@
-body { 
-    margin: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    transition: background-color 0.5s ease; 
-    background-size: 120%; 
-    animation: fanimado 45s infinite; 
+body {
+    margin: 0;
+    background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-color 0.5s ease;
+    background-size: 120%;
+    animation: fanimado 45s infinite;
 }
+
 @keyframes animat {
     0% {
-      transform: scale(0);
+        transform: scale(0);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  @keyframes fanimado {
+}
+
+@keyframes fanimado {
     0% {
-      background-position: 0 50%;
+        background-position: 0 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0 50%;
+        background-position: 0 50%;
     }
-  }
+}
 
 /* wings */
 
 .wing {
     background:white;
-     border-radius: 12px 20px 60px 20px;
-     width:120px;
-     height:50px; margin-top:80px;
-     position:absolute;
+    border-radius: 12px 20px 60px 20px;
+    width:120px;
+    height:50px; margin-top:80px;
+    position:absolute;
 }
 
 /* right wing */
@@ -51,7 +48,7 @@ body {
     left:50%;
     animation:flap1 1s infinite;
     border-bottom:3px solid rgba(0,0,0,.08);
-     border-radius: 12px 20px 60px 20px;
+    border-radius: 12px 20px 60px 20px;
     transform:rotate(-10deg) translate(250px,0);
 }
 
@@ -59,7 +56,7 @@ body {
     0% {
         transform:rotate(-10deg) translate(250px,0);
     }
-    
+
     50% {
         transform:rotate(-5deg) translate(250px,0);
     }
@@ -70,20 +67,20 @@ body {
     background:white;
     width:70%;
     height:70%;
-       border-bottom:3px solid rgba(0,0,0,.08);
+    border-bottom:3px solid rgba(0,0,0,.08);
     border-radius: 20px 20px 60px 20px;
     transform:rotate(20deg) translate(-1px,0);
     margin-top:38px;
 }
 
 .right:after {
-      position:absolute;
+    position:absolute;
     content:'';
     background:white;
     width:40%;
     transform:rotate(29deg) translate(-8px,0);
     height:30%;
-       border-bottom:3px solid rgba(0,0,0,.08);
+    border-bottom:3px solid rgba(0,0,0,.08);
     border-radius: 0px 0px 60px 70px;
     margin-top:66px;
 }
@@ -92,10 +89,10 @@ body {
 
 .left {
     border-radius:12px 20px 20px 60px;
-     margin-left:-60px;
+    margin-left:-60px;
     left:50%;
-     animation:flap2 1s infinite;
-      border-bottom:3px solid rgba(0,0,0,.08);
+    animation:flap2 1s infinite;
+    border-bottom:3px solid rgba(0,0,0,.08);
     transform:rotate(10deg) translate(-248px, 0);
 }
 
@@ -103,7 +100,7 @@ body {
     0% {
         transform:rotate(10deg) translate(-248px,0);
     }
-    
+
     50% {
         transform:rotate(5deg) translate(-248px,0);
     }
@@ -115,22 +112,22 @@ body {
     content:'';
     background:white;
     width:70%;
-       border-bottom:3px solid rgba(0,0,0,.08);
+    border-bottom:3px solid rgba(0,0,0,.08);
     transform:translate(46%,0) rotate(-20deg);
     height:60%;
-      border-radius:12px 20px 70px 70px;
+    border-radius:12px 20px 70px 70px;
     margin-top:40px;
 }
 
 .left:after {
-      position:absolute;
+    position:absolute;
     content:'';
     background:white;
     width:40%;
-       border-bottom:3px solid rgba(0,0,0,.08);
+    border-bottom:3px solid rgba(0,0,0,.08);
     height:30%;
-     transform:translate(164%,0) rotate(-34deg);
-     border-radius:0px 0px 70px 60px;
+    transform:translate(164%,0) rotate(-34deg);
+    border-radius:0px 0px 70px 60px;
     margin-top:58px;
 }
 
@@ -143,11 +140,11 @@ body {
     height: 100px;
     margin-left:-50px;
     left:50%;
-     animation: heart 1s infinite;
+    animation: heart 1s infinite;
     transform:scale(.8);
     transition:.6s;
     margin-top:60px;
-    
+
 }
 .heart:before,
 .heart:after{
@@ -173,44 +170,34 @@ body {
     0% {
         transform: scale(.8) translate(0,0);
     }
-    
+
     50% {
         transform: scale(.92) translate(0, 12px);
     }
-    
+
     100% {
         transform:scale(.8);
     }
 }
 
-/* envelope 
+/* envelope */
 
-  #envelope {
-  background: white; 
-  margin: 200px auto;
-  height: 200px;
-  position: relative;
-  width: 320px;
-  border-radius:8px;
-  overflow:hidden;
-  animation: floaty 1s infinite;
-}*/
-#envelope { 
-    background: white; 
-    width: 100%; 
-    max-width: 320px; 
-    height: auto; 
-    max-height: 200px; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    animation: floaty 1s infinite; 
+#envelope {
+background: white;
+margin: 200px auto;
+height: 200px;
+position: relative;
+width: 320px;
+border-radius:8px;
+overflow:hidden;
+animation: floaty 1s infinite;
 }
 
 @keyframes floaty {
     0% {
         transform:translate(0,0);
     }
-    
+
     50% {
         transform:translate(0, 12px);
     }
@@ -218,28 +205,28 @@ body {
 
 /* bottom, left, and right sides */
 .sides {
-  border-color: transparent #fbfbfb #f7f7f7 #fcfcfc;
-  border-style: solid;
-  border-width: 90px 170px;
-  bottom: 0;
-  height: 0;
-  left: 0;
-  position: absolute;
-  width: 0;
+    border-color: transparent #fbfbfb #f7f7f7 #fcfcfc;
+    border-style: solid;
+    border-width: 90px 170px;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
 }
 
 /* top side */
 
 .top {
-  border-color: white transparent transparent;
-  border-style: solid;
-  border-width: 108px 140px 90px 140px;
-  height: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform-origin: 50% 0;
-  width: 0;
+    border-color: white transparent transparent;
+    border-style: solid;
+    border-width: 108px 140px 90px 140px;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 0;
+    width: 0;
 }
 
 
@@ -259,73 +246,34 @@ body {
     transition: all 1.5s ease-in-out;
     height: 20px;
     max-width: 30px;
-  }
-  .contact .text-love {
+}
+.contact .text-love {
     color: crimson;
     animation-duration: 1s;
     animation-name: heartBeat;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin: 0 0.5rem;
-  }
-  @keyframes heartBeat {
+}
+@keyframes heartBeat {
     from {
-      text-shadow: 0px 0px 15px crimson, 1px 1px 10px rgba(255, 255, 255, 0.1);
+        text-shadow: 0px 0px 15px crimson, 1px 1px 10px rgba(255, 255, 255, 0.1);
     }
     to {
-      text-shadow: 0;
+        text-shadow: 0;
     }
-  }
-
-  #countdown {
-    font-family: 'Dancing Script', cursive;
-    color: crimson;
-    font-size: 30px;
-    text-align: center;
-    margin-top: -150px;
-  /* }
- @media (max-width: 768px) { 
-    .wing { 
-        width: 80px; 
-        height: 30px; 
-    } 
-    .right { 
-        transform: rotate(-10deg) translate(200px,0); 
-    }         
-    .left { 
-        transform: rotate(10deg) translate(-200px, 0); 
-    } 
-    .heart { 
-        width: 80px; height: 60px; 
-        margin-left: -30px; 
-    } 
-    #envelope { 
-        max-width: 260px; max-height: 160px; 
-    } 
-} 
-@media (max-width: 480px) { 
-    .wing { 
-        width: 60px; height: 25px; 
-    } 
-    .right { 
-        transform: rotate(-10deg) translate(150px,0); 
-    } 
-    .left { 
-        transform: rotate(10deg) translate(-150px, 0); 
-    } 
-    .heart { 
-        width: 60px; height: 40px; 
-        margin-left: -20px; 
-    } 
-    #envelope { 
-        max-width: 200px; 
-        max-height: 140px; 
-    
-    } 
 }
-*/
 
-  @media (max-width: 768px) {
+#countdown {
+font-family: 'Dancing Script', cursive;
+color: crimson;
+font-size: 30px;
+text-align: center;
+margin-top: -150px;
+}
+
+
+@media (max-width: 768px) {
     .wing {
         width: 100px;
         height: 40px;
@@ -346,9 +294,9 @@ body {
     }
 
     #envelope {
-        width: 260px;
-        height: 160px;
-        margin: 150px auto;
+    width: 260px;
+    height: 160px;
+    margin: 150px auto;
     }
 
     .contact {
@@ -358,7 +306,7 @@ body {
     }
 
     #countdown {
-        font-size: 24px;
+    font-size: 24px;
     }
 }
 
@@ -384,9 +332,9 @@ body {
     }
 
     #envelope {
-        width: 200px;
-        height: 140px;
-        margin: 100px auto;
+    width: 200px;
+    height: 140px;
+    margin: 100px auto;
     }
 
     .contact {
@@ -396,7 +344,6 @@ body {
     }
 
     #countdown {
-        font-size: 20px;
+    font-size: 20px;
     }
 }
-  }
