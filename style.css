@@ -1,35 +1,18 @@
-body {
-    margin: 0;
-    background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060');
+body { 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-image: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?t=st=1731717320~exp=1731720920~hmac=4642ed233281a4f8a6b2494d2933d447c4454be386a77fe35f6f8cca2ea62df6&w=1060'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
-    transition: background-color 0.5s ease;
-    background-size: 120%;
+    transition: background-color 0.5s ease; 
+    background-size: 120%; 
     animation: fanimado 45s infinite; 
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Evita el scroll */
 }
-
-
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-
 @keyframes animat {
     0% {
       transform: scale(0);
@@ -200,7 +183,7 @@ body {
     }
 }
 
-/* envelope */
+/* envelope 
 
   #envelope {
   background: white; 
@@ -211,6 +194,16 @@ body {
   border-radius:8px;
   overflow:hidden;
   animation: floaty 1s infinite;
+}*/
+#envelope { 
+    background: white; 
+    width: 100%; 
+    max-width: 320px; 
+    height: auto; 
+    max-height: 200px; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    animation: floaty 1s infinite; 
 }
 
 @keyframes floaty {
@@ -290,8 +283,47 @@ body {
     font-size: 30px;
     text-align: center;
     margin-top: -150px;
-  }
-  
+  /* }
+ @media (max-width: 768px) { 
+    .wing { 
+        width: 80px; 
+        height: 30px; 
+    } 
+    .right { 
+        transform: rotate(-10deg) translate(200px,0); 
+    }         
+    .left { 
+        transform: rotate(10deg) translate(-200px, 0); 
+    } 
+    .heart { 
+        width: 80px; height: 60px; 
+        margin-left: -30px; 
+    } 
+    #envelope { 
+        max-width: 260px; max-height: 160px; 
+    } 
+} 
+@media (max-width: 480px) { 
+    .wing { 
+        width: 60px; height: 25px; 
+    } 
+    .right { 
+        transform: rotate(-10deg) translate(150px,0); 
+    } 
+    .left { 
+        transform: rotate(10deg) translate(-150px, 0); 
+    } 
+    .heart { 
+        width: 60px; height: 40px; 
+        margin-left: -20px; 
+    } 
+    #envelope { 
+        max-width: 200px; 
+        max-height: 140px; 
+    
+    } 
+}
+*/
 
   @media (max-width: 768px) {
     .wing {
@@ -367,3 +399,4 @@ body {
         font-size: 20px;
     }
 }
+  }
