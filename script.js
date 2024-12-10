@@ -18,7 +18,7 @@ document.querySelector('.heart').addEventListener('click', function() {
 });
 
 // Definir la fecha y hora objetivo
-var targetDate = new Date('December 11, 2024 00:00:00').getTime();
+var targetDate = new Date('December 10, 2024 03:32:00').getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
