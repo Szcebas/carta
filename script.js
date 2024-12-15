@@ -33,6 +33,7 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x); // Detener el temporizador
+    document.getElementById("press").textContent = "❤️Tap the heart❤️";
     document.getElementById("countdown").textContent = "¡Nueva carta disponible!";
     //localStorage.removeItem('countDownDate'); // Limpiar el almacenamiento si el tiempo ha expirado
   }

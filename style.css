@@ -263,6 +263,15 @@ animation: floaty 1s infinite;
         text-shadow: 0;
     }
 }
+#press {
+    position: absolute;
+    top: 20%; /* Ajusta según la ubicación que prefieras */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    font-size: 1.5rem;
+    color: crimson; /* Color rojo */
+    text-align: center;
+}
 
 #countdown {
 font-family: 'Dancing Script', cursive;
